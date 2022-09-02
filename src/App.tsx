@@ -1,13 +1,13 @@
-import SplitScreen from './components/SplitScreen'
-import Left from './components/Left'
-import Right from './components/Right'
+import { Route, Routes } from "react-router-dom"
+import App01 from './01-SplitScreen/App'
+import App02 from './02-lists/App'
 
 function App() {
   return (
-    <SplitScreen leftWeight={1} rightWeight={3}>
-      <Left name='sidebar' />
-      <Right message='Hello' />
-    </SplitScreen>
+    <Routes>
+      <Route path="/" element={<App01 />} />
+      <Route path="/02" element={<App02 />} />
+    </Routes>
   )
 }
 
