@@ -35,7 +35,7 @@ export interface Product {
   name: string
   price: string
   description?: string
-  rating?: string
+  rating?: number
 }
 
 export interface IProduct {
