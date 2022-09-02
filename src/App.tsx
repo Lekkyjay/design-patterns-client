@@ -4,7 +4,10 @@ import Right from './components/Right'
 
 function App() {
   return (
-    <SplitScreen Left={Left} leftWeight={1} Right={Right} rightWeight={3} />
+    <SplitScreen leftWeight={1} rightWeight={3}>
+      <Left name='sidebar' />
+      <Right message='Hello' />
+    </SplitScreen>
   )
 }
 

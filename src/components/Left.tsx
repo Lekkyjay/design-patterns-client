@@ -1,11 +1,15 @@
 import styled from "styled-components"
 
+interface ILeft {
+  name: string
+}
+
 const Container = styled.div`
-  background-color: green;
+  background-color: #d3e24c;
 `
 
-export default function Left() {
+export default function Left({ name }: ILeft) {
   return (
-    <Container>Left</Container>
+    <Container>{ name }</Container>
   )
 }

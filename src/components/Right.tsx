@@ -1,11 +1,15 @@
 import styled from "styled-components"
 
+interface IRight {
+  message: string
+}
+
 const Container = styled.div`
-  background-color: blue;
+  background-color: #ff0015;
 `
 
-export default function Right() {
+export default function Right({ message }: IRight) {
   return (
-    <Container>Right</Container>
+    <Container>{ message }</Container>
   )
 }

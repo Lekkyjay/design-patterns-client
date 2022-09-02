@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 
 interface ISplitScreenProps {
-  Left: React.FC      //React.ReactNode   does not work here!! Why???
-  Right: React.FC      //React.ReactNode   does not work here!! Why???
   leftWeight?: number
   rightWeight?: number
+  children: React.ReactNode[]
 }
 
 interface IPaneProps {
@@ -20,14 +19,16 @@ const Pane = styled.div<IPaneProps>`
   flex: ${props => props.weight};
 `
 
-export default function SplitScreen({ Left, Right, leftWeight = 1, rightWeight = 1 }: ISplitScreenProps) {
+export default function SplitScreen({ children, leftWeight = 1, rightWeight = 1 }: ISplitScreenProps) {
+  const [ left, right ] = children
+
   return (
     <Container>
       <Pane weight={leftWeight}>
-        <Left />
+        { left }
       </Pane>
       <Pane weight={rightWeight}>
-        <Right />
+        { right }
       </Pane>
     </Container>
   )
