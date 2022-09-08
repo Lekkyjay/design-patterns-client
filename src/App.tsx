@@ -7,6 +7,7 @@ import App04 from "./04-forms/App04"
 import App05 from "./05-onboardingFlows/App05"
 import App06 from "./06-onboardingFlows/App06"
 import App07 from "./07-customHooks/App07"
+import App08 from "./08-functionalProgramming/App08"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/05" element={<App05 />} />
       <Route path="/06" element={<App06 />} />
       <Route path="/07" element={<App07 />} />
+      <Route path="/08" element={<App08 />} />
     </Routes>
   )
 }
