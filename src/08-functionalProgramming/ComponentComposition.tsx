@@ -2,7 +2,7 @@ type ButtonProps = {
   size?: string 
   color?: string 
   text: string
-  [x:string]: any;
+  [x:string]: any
 }
 
 export const Button = (props: ButtonProps) => {

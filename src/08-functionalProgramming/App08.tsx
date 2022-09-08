@@ -1,4 +1,5 @@
 import { BigSuccessButton, DangerButton } from "./ComponentComposition"
+import { BigSuccessButtonPA, DangerButtonPA } from "./PartiallyApply"
 import RecursiveComponent from "./RecursiveComponent"
 
 const nestedObject = {
@@ -33,6 +34,10 @@ export default function App08() {
       <DangerButton text="Watch it!!!" size="large" />
       <br /><br />
       <BigSuccessButton text="Yes!!!" />
+      <br /><br />
+      <DangerButtonPA text="PartiallyApply!!!" size="large" />
+      <br /><br />
+      <BigSuccessButtonPA text="PartiallyApply Yes!!!" />
     </>
   )
 }
