@@ -1,7 +1,11 @@
-import useCurrentUser from './useCurrentUser'
+import useUser from './02-useUser'
 
-export default function UserInfo() {
-  const user = useCurrentUser()
+interface IProp {
+  userId: number
+}
+
+export default function UserInfo2({ userId }: IProp) {
+  const user = useUser(userId)
   const { name, age, hairColor, hobbies } = user || {}
 
   return user ? (

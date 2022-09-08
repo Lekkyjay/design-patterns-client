@@ -1,11 +1,11 @@
-import useUser from './useUser'
+import useResource from './03-useResource'
 
 interface IProp {
   userId: number
 }
 
-export default function UserInfo2({ userId }: IProp) {
-  const user = useUser(userId)
+export default function UserInfo3({ userId }: IProp) {
+  const user = useResource(`provide-resourceUrl-here/${userId}`)
   const { name, age, hairColor, hobbies } = user || {}
 
   return user ? (
