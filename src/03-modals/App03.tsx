@@ -1,5 +1,5 @@
 import React from 'react'
-import { products } from '../02-lists/data'
+import { products } from '../data'
 import LargeListItem from '../02-lists/products/LargeListItem'
 import Modal from './Modal'
 

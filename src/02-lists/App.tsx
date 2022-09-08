@@ -1,4 +1,4 @@
-import { people, Product, products } from './data'
+import { people, Product, products } from '../data'
 import NumberedList from './NumberedList'
 import LargeListItem from './people/LargeListItem'
 import SmallListItem from './people/SmallListItem'

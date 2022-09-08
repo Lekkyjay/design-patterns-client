@@ -1,4 +1,4 @@
-import { IProduct } from '../data'
+import { IProduct } from '../../data'
 
 export default function LargeListItem({ product }: IProduct) {
   const { name, price, description, rating } = product

@@ -6,6 +6,7 @@ import App03Controlled from "./03-modals/App03Controlled"
 import App04 from "./04-forms/App04"
 import App05 from "./05-onboardingFlows/App05"
 import App06 from "./06-onboardingFlows/App06"
+import App07 from "./07-customHooks/App07"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/04" element={<App04 />} />
       <Route path="/05" element={<App05 />} />
       <Route path="/06" element={<App06 />} />
+      <Route path="/07" element={<App07 />} />
     </Routes>
   )
 }

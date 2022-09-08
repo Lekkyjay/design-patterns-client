@@ -1,4 +1,4 @@
-import { IPerson } from "../data";
+import { IPerson } from "../../data";
 
 export default function SmallListItem({person}: IPerson) {
   const { name, age } = person

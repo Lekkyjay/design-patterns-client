@@ -1,4 +1,4 @@
-import { Person, Product } from './data'
+import { Person, Product } from '../data'
 
 interface IRegularListProps {
   items: Person[] | Product[]
